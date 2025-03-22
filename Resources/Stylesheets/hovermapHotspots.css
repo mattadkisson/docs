@@ -1,0 +1,148 @@
+/*<meta conditions="" />*/
+
+/* These rules are for <add your description here> */
+
+#Recipes.hoverMap .mapLink
+{
+	border: 2px solid #fa8c00;
+}
+
+#Recipes.hoverMap .mapLink.disableStuff
+{
+	border: none;
+	animation: none;
+}
+
+#Recipes.hoverMap:hover .mapLink
+{
+	border: 2px solid #fa8c00;
+}
+
+#Recipes_1
+{
+	width: 158px;
+	height: 93px;
+	top: 69.98px;
+	left: 20px;
+}
+
+#Recipes_2
+{
+	width: 160px;
+	height: 99px;
+	top: 183px;
+	left: 19px;
+}
+
+#Recipes_3
+{
+	width: 158px;
+	height: 32px;
+	top: 26px;
+	left: 20px;
+}
+
+#Recipes_4
+{
+	width: 161px;
+	height: 21px;
+	top: 285px;
+	left: 18px;
+}
+
+#Recipes_5
+{
+	width: 161px;
+	height: 23px;
+	top: 309.99px;
+	left: 18px;
+}
+
+#Recipes_6
+{
+	width: 161px;
+	height: 27px;
+	top: 335.99px;
+	left: 18px;
+}
+
+#Recipes_7
+{
+	width: 100px;
+	height: 189px;
+	top: 17px;
+	left: 676.99px;
+}
+
+#Recipes_8
+{
+	width: 99px;
+	height: 101px;
+	top: 212.98px;
+	left: 677.99px;
+}
+
+#Recipes_9
+{
+	width: 100px;
+	height: 46px;
+	top: 324.99px;
+	left: 677.99px;
+}
+
+#Recipes_10
+{
+	width: 129px;
+	height: 55px;
+	top: 367.99px;
+	left: 84px;
+}
+
+#Recipes_11
+{
+	width: 76px;
+	height: 55px;
+	top: 367.96px;
+	left: 4px;
+}
+
+#Recipes_12
+{
+	width: 186px;
+	height: 26px;
+	top: 366.99px;
+	left: 217px;
+}
+
+#Recipes_13
+{
+	width: 188px;
+	height: 25px;
+	top: 396.99px;
+	left: 216px;
+}
+
+#Recipes_14
+{
+	width: 79px;
+	height: 57px;
+	top: 366.99px;
+	left: 411.99px;
+}
+
+#Recipes_15
+{
+	width: 170px;
+	height: 32px;
+	top: 23px;
+	left: 248px;
+}
+
+#Recipes_16
+{
+	width: 173px;
+	height: 33px;
+	top: 22px;
+	left: 486px;
+}
+

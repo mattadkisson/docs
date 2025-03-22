@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="230" MadCap:lastWidth="1191">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>
+        </title>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-83734478-2">
+		</script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-83734478-2');
+		</script>
+
+    </head>
+    <body>
+        <div class="content">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContentWizard">
+                        <div class="clearfix">
+                            <MadCap:topicToolbarProxy />
+                        </div>
+                    </div>
+                    <MadCap:breadcrumbsProxy />
+                    <MadCap:bodyProxy />
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div style="text-align: center;">
+            <a href="http://www.ubisense.net/" target="_blank" style="text-decoration: underline;color: #00286a;">www.ubisense.net</a>
+            <br />
+            <MadCap:snippetText src="../Snippets/CopyrightInFooter.flsnp" />
+        </div>
+    </body>
+</html>
