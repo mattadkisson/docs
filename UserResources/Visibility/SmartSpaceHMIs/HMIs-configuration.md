@@ -338,12 +338,9 @@ defined HMIs will be exported. Use -o to write to a file. If you include -a,
 then the tool will look for assets used in the HMIs, and will save the
 contents of all used assets to files in the current folder.
 
-    
-    
-    $ ubisense_hmi_config.exe export -a -h "Andon" -o andon.json
-    export interface Andon
-      export asset CF052A0A5AC3331A29AB5BC000004F6400000096.asset
-
+```bash
+  ubisense_hmi_config.exe export -a -h "Andon" -o andon.json export interface Andon export asset CF052A0A5AC3331A29AB5BC000004F6400000096.asset
+```
 ### Importing HMIs
 
 The tool can import a saved JSON file containing HMI definitions, and any
@@ -692,17 +689,13 @@ In order to use the bound data in JavaScript, you typically need to receive a
 notification when the data values change. You can use one of the callbacks to
 register to watch when the bound data changes. For example:
 
-    
-    
-    <div id="app" v-cloak udm="products:'Products'" udm-bound="onBound">
-     ...
-    </div>
-    
+```html
+    <div id="app" v-cloak udm="products:'Products'" udm-bound="onBound">...</div>
+```
 
 Then in JavaScript define the onBound function:
-
     
-    
+```javascript
     function onBound(vm)
     {
       vm.$watch("products.rows",function (newVal, oldVal) {
@@ -710,13 +703,11 @@ Then in JavaScript define the onBound function:
         console.log(newVal);
       });
     }
-    
+```
 
 Once you have got hold of the Vue instance, you can directly access the data
 on that instance. For example:
-
-    
-    
+```javascript
     // Get the current product rows.
     var rows = vm.products.rows;
     // Iterate over them.
@@ -728,7 +719,7 @@ on that instance. For example:
        var cols = rows[id].Summary;
        // do something with the summary columns.
     }
-    
+```
 
 ### Setting Object Properties
 
@@ -1487,8 +1478,7 @@ into a suitable string.
     
 
 Script:
-
-    
+```javascript
     
     $(function () {
      
@@ -1532,14 +1522,14 @@ the query. This causes the map to execute its search using this product name.
         }
       });  
     });
-    
+```    
     
 
 | We then set products.selected to be the object identifier that was clicked.
 This causes the products detail search to be executed, which in turn will
 populate the details table.  
       
-    
+```javascript
     function convertValue(v)
     {
       if (v.hasOwnProperty('String'))
@@ -1553,7 +1543,7 @@ populate the details table.
       else
         return "-";
     }
-    
+```
 
 | Finally we implement the convertValue function used in the details table.
 Here we decode the type of each detail result and return something appropriate
@@ -1561,8 +1551,7 @@ to render to a string in the table.
   
 ![Closed](../../../images/transparent.gif)display code for copying
 
-    
-    
+```javascript
     $(function () {
      
       var vm = new Vue({
@@ -1598,7 +1587,7 @@ to render to a string in the table.
       else
         return "-";
     }
-    
+```
 
 The result is a reactive report that can be searched from the input box, and
 when a row is selected the corresponding product is shown in the map, and its

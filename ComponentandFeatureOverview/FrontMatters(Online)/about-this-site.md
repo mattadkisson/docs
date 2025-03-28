@@ -1,25 +1,6 @@
-
-
-Skip To Main Content
-
-[](../../Home.htm)
-
-  * placeholder
-
-Filter:
-
-  * All Files
-
-Submit Search
-
-![Navigate previous](../../images/transparent.gif) ![Navigate
-next](../../images/transparent.gif) ![Expand
-all](../../images/transparent.gif) ![](../../images/transparent.gif)
-![Print](../../images/transparent.gif)
-
-You are here:
-
-# About this site
+---
+Title: About this site
+---
 
 Use this website to discover the Ubisense SmartSpace software. You can find a
 variety of information ranging from overviews of the SmartSpace components and
@@ -31,13 +12,13 @@ Your feedback can help us to improve our technical documentation. If you find
 any errors in this manual, or have any suggestions for improvement, send an
 email to support@ubisense.net, with the following details:
 
-  * The version number of the website (see below)
+* The version number of the website (see below)
 
-  * The version number of the software (shown on each topic)
+* The version number of the software (shown on each topic)
 
-  * The URL of the topic on the website
+* The URL of the topic on the website
 
-  * A short explanation of the problem, or your suggestion
+* A short explanation of the problem, or your suggestion
 
 ## Version
 
@@ -81,14 +62,3 @@ aware of and comply with different national license requirements.
 Windows® is a registered trademark of Microsoft Corporation in the United
 States and/or other countries. The other names of actual companies and
 products mentioned herein are the trademarks of their respective owners.
-
-![Navigate previous](../../images/transparent.gif) ![Navigate
-next](../../images/transparent.gif) ![Expand
-all](../../images/transparent.gif) ![](../../images/transparent.gif)
-![Print](../../images/transparent.gif)
-
-* * *
-
-[www.ubisense.net](http://www.ubisense.net/)  
-Copyright © 2020, Ubisense Limited 2014 - 2020. All Rights Reserved.
-
