@@ -1,31 +1,16 @@
 
-# Type and object definition
-
 ![web of blocks with smaller blocks illustrating
 inheritance](/images/TypeAndObjectDefinition.jpg)
 
-Tools and a framework to build and manage application-specific data models
-including types, objects, names, and spatial properties
+Tools and a framework to build and manage application-specific data models including types, objects, names, and spatial properties
 
 ## Summary
 
-In SmartSpace, object types are used to model real-world entities. An object
-type has properties (sometimes also called attributes), which reflect the
-entity's structure. Properties are defined using built-in types or other
-object types. Creating a collection of types and assigning them properties
-that are relevant to an application is called data modeling.
+In SmartSpace, object types are used to model real-world entities. An object type has properties (sometimes also called attributes), which reflect the entity's structure. Properties are defined using built-in types or other object types. Creating a collection of types and assigning them properties that are relevant to an application is called data modeling.
 
-The first level of data modeling in SmartSpace is type and object definition.
-This feature allows application developers to define new types (such as
-product, process, trolley, forklift) and give them two fundamental properties:
-a name and optional spatial properties (or spaces).
+The first level of data modeling in SmartSpace is type and object definition. This feature allows application developers to define new types (such as product, process, trolley, forklift) and give them two fundamental properties: a name and optional spatial properties (or spaces).
 
-When building a new application, the name property is used to give every
-object instance of a type a unique identifier, while spaces are used in
-spatial relations between object types (see [Spatial relationship
-definition](spatial-relationship-definition.htm)). Where an object type is
-involved in more than one spatial relationship, it is possible to give the
-type multiple different spaces to match each desired spatial relationship.
+When building a new application, the name property is used to give every object instance of a type a unique identifier, while spaces are used in spatial relations between object types (see [Spatial relationship definition](spatial-relationship-definition.htm)). Where an object type is involved in more than one spatial relationship, it is possible to give the type multiple different spaces to match each desired spatial relationship.
 
 With the licensing of [Business object properties](../Visibility/business-
 object-properties-for-visibility.htm), user-defined types can be created with
@@ -65,531 +50,66 @@ can only use Ubisense types associated with features you have licensed.
 Below are the Ubisense types and the components or features to which they belong:
 <table>
     <thead>
-        <tr>
-            <th class="ubisense-table-header">Ubisense type</th>
-            <th class="ubisense-table-header">Description</th>
+        <tr class="ubisense-table-header">
+            <th>Ubisense type</th>
+            <th>Description</th>
         </tr>
     </thead>
     <tbody>
-        <tr class="TableStyle-SmartSpaceTable-Body-subheading">
-            <td class="TableStyle-SmartSpaceTable-BodyE-Column1-subheading" style="font-weight: bold;">
-                <span class="">Core</span>
-            </td>
-            <td class="TableStyle-SmartSpaceTable-BodyD-Column1-subheading" style="font-weight: bold;">&nbsp;</td>
+        <tr class="ubisense-table-subheader">
+            <td colspan="2">Core</td>
         </tr>
-        <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-            <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                <span class="mc-variable UbisenseVariables.CompanyName variable">Ubisense</span> Object
-            </td>
-            <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1"><span class="Emphasis">Ubisense Object</span> is the most basic type and in the absence of any more complex types is the basis for all new data model types.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> (See <a href="#Create" class="MCXref xref" data-mc-variable-override="">Creating a custom type and adding a space property</a> for an example of configuring a custom data type.)</madcap:conditionaltext><br>                        This type allows you to create custom data types which have a unique name and optionally include one or many space properties allowing the type to be included in different <span class="mc-variable SmartSpace.SmartSpace variable">SmartSpace</span> spatial relations.
-                    </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-subheading" data-mc-pattern="4" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-subheading" colspan="2"><span class="mc-variable SmartSpace.Visibility(component) variable">Visibility</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="Releases.3_8 SP4">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">Sensor</td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used by <span class="mc-variable SmartSpace.Visibility(component) variable">Visibility</span>. Sensors created in <span class="mc-variable UbisenseVariables.LSCShort variable">LSC</span> are copied to <span class="mc-variable SmartSpace.SmartSpace variable">SmartSpace</span> as type Sensor, along with the name, position and label of the sensors. <madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)">See <a href="../../../ComponentandFeatureOverview/TopLevelFeatures/Visibility/location-system-sync.htm" class="MCXref xref" data-mc-variable-override="">Location system sync</a> for how to use this type.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-subheading" data-mc-pattern="4" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-subheading" colspan="2"><span class="mc-variable SmartSpace.Locationrules variable">Location rules</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">Assertion Area</td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used in <span class="mc-variable SmartSpace.Robustlocation variable">Robust location</span>.
- <span class="Emphasis">Assertion area</span> has two main functions: to group together assertion points with the same configuration parameters and to control a set of objects which can be located at one of its assertion points.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)">
-See
-<a href="../../LocationRules/ConfigLocRules/robust-assertion-point-configuration.htm" class="MCXref xref" data-mc-variable-override="">Robust assertion points</a> for how to use this type.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.Assertion_Point variable">Assertion Point</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used in <span class="mc-variable SmartSpace.Robustlocation variable">Robust location</span>.
-<span class="Emphasis">Assertion points</span> report when an object is at a given place, using strong evidence, including distance from the point and the speed at which the object is moving.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See
-<a href="../../LocationRules/ConfigLocRules/robust-assertion-point-configuration.htm" class="MCXref xref" data-mc-variable-override="">Robust assertion points</a> for how to use this type.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">Parking Area</td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used in <span class="mc-variable SmartSpace.Parkingbaysnapping variable">Parking bay snapping</span>.
-<span class="Emphasis">Parking Area</span> is derived from Assertion Area and inherits all spatial properties, parameters and assertions from Assertion Area; and these inherited configurations have the same function.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See
-<a href="../../LocationRules/ConfigLocRules/parking-configuration.htm" class="MCXref xref" data-mc-variable-override="">Parking</a> for how to use this type.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">Parking Bay</td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used in <span class="mc-variable SmartSpace.Parkingbaysnapping variable">Parking bay snapping</span>.
- <span class="Emphasis">Parking Bay</span> is derived from Assertion Point and inherits all spatial properties, parameters and assertions from Assertion Point; and these inherited configurations have the same function.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See
-<a href="../../LocationRules/ConfigLocRules/parking-configuration.htm" class="MCXref xref" data-mc-variable-override="">Parking</a> for how to use this type.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">Tag Association Point</td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used in <span class="mc-variable SmartSpace.Automatedtagassoc variable">Automated tag association</span>.
-During automated tag association a sequence of objects created from an external source are assigned to tags detected at a <span class="Emphasis">Tag Association Point</span>.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See
-<a href="../../LocationRules/ConfigLocRules/automated-tag-association-configuration.htm" class="MCXref xref" data-mc-variable-override="">Automated tag association</a> for how to use this type.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1" colspan="2"><span class="mc-variable SmartSpace.Room_snapping_(feature) variable">Room snapping</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Building
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used in <span class="mc-variable SmartSpace.Room_snapping_(feature) variable">Room snapping</span> to group rooms and doorways.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../LocationRules/RoomSnapping/room-snapping-configuration.htm">Configuring Room snapping</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Doorway
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used in <span class="mc-variable SmartSpace.Room_snapping_(feature) variable">Room snapping</span> to define a space through which tags can pass between rooms.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../LocationRules/RoomSnapping/room-snapping-configuration.htm">Configuring Room snapping</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Room
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used in <span class="mc-variable SmartSpace.Room_snapping_(feature) variable">Room snapping</span> to define areas inside of which tags are snapped to locations.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../LocationRules/RoomSnapping/room-snapping-configuration.htm">Configuring Room snapping</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1" colspan="2"><span class="mc-variable SmartSpace.Paths_and_queues_(feature) variable">Paths and queues</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">Path Group</td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used in <span class="mc-variable SmartSpace.Paths_and_queues_(feature) variable">Paths and queues</span>. A Path Group is a logical grouping of paths used to determine which objects are being controlled by the path tracking location rules.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../LocationRules/PathsAndQueues/paths-queues-configuration.htm#PQModel" class="MCXref xref" data-mc-variable-override="">Creating the data model for Paths and queues</a> for further information.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">Path Point</td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used in <span class="mc-variable SmartSpace.Paths_and_queues_(feature) variable">Paths and queues</span>. A path point is an object intended to be located exactly on a path. Creating objects based on the Path point type gives objects features to get them to snap to paths or be generated at regular intervals.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../LocationRules/PathsAndQueues/paths-queues-configuration.htm#PQModel" class="MCXref xref" data-mc-variable-override="">Creating the data model for Paths and queues</a> for further information.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location quality monitoring,Releases.3_6">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1" colspan="2"><span class="mc-variable SmartSpace.Location_quality_monitoring variable">Location quality monitoring</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location quality monitoring,Releases.3_6">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Location Quality Monitor
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.Location_quality_monitoring variable">Location quality monitoring</span>. Base type for all quality monitor types. See <a href="../../LocationRules/LocationQuality/location-quality-monitoring-config.htm" class="MCXref xref" data-mc-variable-override="">Introduction to Location quality monitoring</a> for further information.
-                    </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location quality monitoring,Releases.3_6">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Distance Monitor
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.Location_quality_monitoring variable">Location quality monitoring</span>. Base type for all distance monitor types. See <a href="../../LocationRules/LocationQuality/location-quality-monitoring-config.htm" class="MCXref xref" data-mc-variable-override="">Introduction to Location quality monitoring</a> for further information.
-                    </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location quality monitoring,Releases.3_6">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Base Distance Monitor
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.Location_quality_monitoring variable">Location quality monitoring</span>. Monitor to measure the maximum distance between the current tag position and the longer-term average position, over a time interval. See <a href="../../LocationRules/LocationQuality/location-quality-monitoring-config.htm" class="MCXref xref" data-mc-variable-override="">Introduction to Location quality monitoring</a> for further information.
-                    </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location quality monitoring,Releases.3_6">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Jump Monitor
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.Location_quality_monitoring variable">Location quality monitoring</span>. Monitor to detect large distances between two consecutive tag location events. See <a href="../../LocationRules/LocationQuality/location-quality-monitoring-config.htm" class="MCXref xref" data-mc-variable-override="">Introduction to Location quality monitoring</a> for further information.
-                    </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location quality monitoring,Releases.3_6">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Parking Distance Monitor
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.Location_quality_monitoring variable">Location quality monitoring</span>. Monitor to measure the tag sighting distance from the tag position assuming the object is parked. See <a href="../../LocationRules/LocationQuality/location-quality-monitoring-config.htm" class="MCXref xref" data-mc-variable-override="">Introduction to Location quality monitoring</a> for further information.
-                    </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location quality monitoring,Releases.3_6">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Path Monitor
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.Location_quality_monitoring variable">Location quality monitoring</span>. Base type for all path monitor types. See <a href="../../LocationRules/LocationQuality/location-quality-monitoring-config.htm" class="MCXref xref" data-mc-variable-override="">Introduction to Location quality monitoring</a> for further information.
-                    </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location quality monitoring,Releases.3_6">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Path Distance Monitor
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.Location_quality_monitoring variable">Location quality monitoring</span>. Monitor to measure the distance of the tag from its expected position if the object is on the path. See <a href="../../LocationRules/LocationQuality/location-quality-monitoring-config.htm" class="MCXref xref" data-mc-variable-override="">Introduction to Location quality monitoring</a> for further information.
-                    </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location quality monitoring,Releases.3_6">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Path Jump Monitor
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.Location_quality_monitoring variable">Location quality monitoring</span>. Monitor to measure the distance between consecutive tag positions assuming the tagged object is on the path. See <a href="../../LocationRules/LocationQuality/location-quality-monitoring-config.htm" class="MCXref xref" data-mc-variable-override="">Introduction to Location quality monitoring</a> for further information.
-                    </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location quality monitoring,Releases.3_6">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Outage Monitor
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.Location_quality_monitoring variable">Location quality monitoring</span>. Monitor to measure the length of time between successive sightings of a tag. See <a href="../../LocationRules/LocationQuality/location-quality-monitoring-config.htm" class="MCXref xref" data-mc-variable-override="">Introduction to Location quality monitoring</a> for further information.
-                    </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-subheading" data-mc-pattern="4" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-subheading" colspan="2"><span class="mc-variable SmartSpace.RFIDintegration variable">RFID integration</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.AngleID_Recipe variable">AngleID Recipe</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Automatically created by <span class="mc-variable SmartSpace.AngleIDConnect variable">AngleID connect</span>. A recipe in <span class="mc-variable SmartSpace.AngleID variable">AngleID</span> contains instructions to tell tag readers what to do with streams of angle readings generated when the readers detect <span class="mc-variable UbisenseVariables.CompanyName variable">Ubisense</span> tags.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RFIDIntegration/AngleIDConnect/angleid-connect-configuration.htm#h1_3" class="MCXref xref" data-mc-variable-override="">What AngleID connect does</a> for further information.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.LLRP_Reader variable">LLRP Reader</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used in the <span class="mc-variable SmartSpace.LLRPinterface variable">LLRP interface</span> to create   type for LLRP readers you want to connect to.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RFIDIntegration/LLRPinterface/LLRP-tag-reader-configuration.htm">LLRP Tag Reader Configuration</a> for further information.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-subheading" data-mc-pattern="4" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-subheading" colspan="2" style="font-weight: bold;"><span class="mc-variable SmartSpace.RTLSintegration variable">RTLS integration</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1" colspan="2"><span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Action
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Abstract base type for all actions.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Association Action
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Associates unassociated parsed objects with free tags from a given range.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Cartesian Location Action
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Injects object/tag locations from Cartesian (x/y/z) data.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Fixed Location Action
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Injects object/tag locations at a fixed position.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        GPS Location Action
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Injects object/tag locations from GPS data.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">GPS Reference Point</td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Used to configure GPS coordinate conversion.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        HTTP Listener Stream
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Listens for POST/PUT HTTP(S) requests.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        HTTP Request Stream
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Retrieves data via periodic HTTP(S) GET requests.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Location Action
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Abstract base class for actions on object/tag location data.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Location Action Zone
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Used to define inclusion/exclusion extents for location actions. <madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Object Action
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Abstract base class for actions on object data.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">Object Creation Action</td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Creates missing <span class="mc-variable SmartSpace.SmartSpace variable">SmartSpace</span> objects to match objects from parsed data. It is recommended that you only have one Object Creation Action per External system.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Object Tag Action
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Abstract base class for actions on object/tag data.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Property Action
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Sets UDM property values for objects based on parsed data.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="Releases.3_5">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        SQL Stream
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Connects and queries external SQL systems. <madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Stream
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Abstract base type for streams.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Tag Battery Action
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Asserts tag battery status from parsed data.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="Releases.3_6">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        TCP Client Stream
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Connects to a TCP server socket and listens for data. <madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Text Connector Stream
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Abstract base class for text connector stream.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Text Listener Stream
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Abstract base class for text listener streams.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Text Stream
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Abstract base class for text based streams.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Websocket Connector Stream
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Connects to a server via websockets and listens for data.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.ExternalDataConnector">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">Zone</td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used by <span class="mc-variable SmartSpace.External_data_connector_(feature) variable">External data connector</span>. Used to define inclusion/exclusion extents for location actions. <madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/ExternalDataConnector/external-data-connector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Overview of the External data connector</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.AVLGPSconnect">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1" colspan="2"><span class="mc-variable SmartSpace.AVL/GPS_connect variable">AVL/GPS connect</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.AVLGPSconnect">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">GPS Reference Point</td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used by <span class="mc-variable SmartSpace.AVL/GPS_connect variable">AVL/GPS connect</span>.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/AVL-GPSConnect/web-source-injector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Web Source Injector</a>.</madcap:conditionaltext> Deprecated from <span class="mc-variable ProductName.ProductName variable">SmartSpace</span> version <span class="mc-variable SmartSpaceVersions.Deprecated_SoftwareVersion variable">3.9</span> and above.</td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.AVLGPSconnect">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">GPS Zone</td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used by <span class="mc-variable SmartSpace.AVL/GPS_connect variable">AVL/GPS connect</span>.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/AVL-GPSConnect/web-source-injector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Web Source Injector</a>.</madcap:conditionaltext> Deprecated from <span class="mc-variable ProductName.ProductName variable">SmartSpace</span> version <span class="mc-variable SmartSpaceVersions.Deprecated_SoftwareVersion variable">3.9</span> and above.</td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.AVLGPSconnect">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">Web Location Source</td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Used by <span class="mc-variable SmartSpace.AVL/GPS_connect variable">AVL/GPS connect</span>.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../RTLSIntegration/AVL-GPSConnect/web-source-injector-configuration.htm" class="MCXref xref" data-mc-variable-override="">Web Source Injector</a>.</madcap:conditionaltext> Deprecated from <span class="mc-variable ProductName.ProductName variable">SmartSpace</span> version <span class="mc-variable SmartSpaceVersions.Deprecated_SoftwareVersion variable">3.9</span> and above.</td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-subheading" data-mc-pattern="4" data-mc-conditions="">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-subheading" colspan="2"><span class="mc-variable SmartSpace.SmartSpaceDeveloper variable">SmartSpace Developer</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location simulation,Releases.3_9">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">Sensor</td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">&nbsp;</td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location simulation">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1" colspan="2"><span class="mc-variable SmartSpace.Location_simulation variable">Location simulation</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location simulation">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Simulation Control
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.Location_simulation variable">Location simulation</span>. Base type for all simulation control types. See <a href="../../BusinessRulesDeveloper/location-simulation-config.htm" class="MCXref xref" data-mc-variable-override="">Location simulation</a> for further information.
-                    </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location simulation">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Simulation Behaviour
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.Location_simulation variable">Location simulation</span>. A simulation behaviour has a set of service parameters that define how objects behave in a simulation. See <a href="../../BusinessRulesDeveloper/location-simulation-config.htm" class="MCXref xref" data-mc-variable-override="">Location simulation</a> for further information.
-                    </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location simulation">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Simulation Lifecycle
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.Location_simulation variable">Location simulation</span>. A simulation lifecycle has a set of service parameters that define a set of objects to be created while the lifecycle is active. See <a href="../../BusinessRulesDeveloper/location-simulation-config.htm" class="MCXref xref" data-mc-variable-override="">Location simulation</a> for further information.
-                    </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-conditions="SmartSpaceC&amp;F.Location simulation">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1">
-                        Simulation Target Group
-                    </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used by <span class="mc-variable SmartSpace.Location_simulation variable">Location simulation</span>. A simulation target group is used to make random routing decisions. See <a href="../../BusinessRulesDeveloper/location-simulation-config.htm" class="MCXref xref" data-mc-variable-override="">Location simulation</a> for further information.
-                    </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-subheading" data-mc-pattern="4" data-mc-conditions="SmartSpaceC&amp;F.ACS">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-subheading" colspan="2"><span class="mc-variable SmartSpace.ACS variable">ACS</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="SmartSpaceC&amp;F.ACS">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.Generation2_Area variable">Generation2 Area</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Used to define <a href="#" class="MCTextPopup popup popupHead MCTextPopup_Closed" data-mc-state="closed" data-aria-describedby="392b8fad-8038-4ee0-b59b-cf00bd31501f" role="button">areas<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true" style="opacity: 0;" role="tooltip" id="392b8fad-8038-4ee0-b59b-cf00bd31501f"><span class="MCTextPopupArrow"> </span>In ACS, areas are used to partition the site model. Usually an area will represent some complete, but relatively self-contained region of the site, such as one floor of a building, or one functional area of a large floor.</span></a> for use with <span class="mc-variable SmartSpace.ACS variable">ACS</span>.<madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)"> See <a href="../../ACS/area-creation-for-ACS.htm" class="MCXref xref" data-mc-variable-override="">Creating areas for use in ACS</a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="Releases.2_9">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Assembly_Line variable">ACS Assembly Line</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Parent type used with <span class="mc-variable SmartSpace.ACS variable">ACS</span>.</td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="Releases.2_11">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Assembly_Point variable">ACS Assembly Point</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Parent type used with <span class="mc-variable SmartSpace.ACS variable">ACS</span>.</td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="Releases.2_9">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Association_Zone variable">ACS Association Zone</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Parent type used with <span class="mc-variable SmartSpace.ACS variable">ACS</span>.</td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="SmartSpaceC&amp;F.ACS">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Device variable">ACS Device</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Parent type used for all <span class="mc-variable SmartSpace.ACS variable">ACS</span> device types. <madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)">See <a href="../../ACS/acs-configuration.htm#ACStypes"><span class="mc-variable ACS.ACS variable">ACS</span> types in <span class="mc-variable SmartSpace.SmartSpace variable">SmartSpace</span></a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="Releases.2_9">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Disassociation_Zone variable">ACS Disassociation Zone</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Parent type used with <span class="mc-variable SmartSpace.ACS variable">ACS</span>.</td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="Releases.2_11">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Event_Subscription variable">ACS Event Subscription</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Parent type used with <span class="mc-variable SmartSpace.ACS variable">ACS</span>.</td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="Releases.2_9">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Exception variable">ACS Exception</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Parent type used with <span class="mc-variable SmartSpace.ACS variable">ACS</span>. <madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)">See <a href="../../ACS/acs-configuration.htm#ACStypes"><span class="mc-variable ACS.ACS variable">ACS</span> types in <span class="mc-variable SmartSpace.SmartSpace variable">SmartSpace</span></a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="SmartSpaceC&amp;F.ACS">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_External_System variable">ACS External System</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Parent type used for all <span class="mc-variable SmartSpace.ACS variable">ACS</span> external systems. <madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)">See <a href="../../ACS/acs-configuration.htm#ACStypes"><span class="mc-variable ACS.ACS variable">ACS</span> types in <span class="mc-variable SmartSpace.SmartSpace variable">SmartSpace</span></a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="SmartSpaceC&amp;F.ACS">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Ident_Zone variable">ACS Ident Zone</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Parent type used for all <span class="mc-variable SmartSpace.ACS variable">ACS</span> ident zones. <madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)">See <a href="../../ACS/acs-configuration.htm#ACStypes"><span class="mc-variable ACS.ACS variable">ACS</span> types in <span class="mc-variable SmartSpace.SmartSpace variable">SmartSpace</span></a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="SmartSpaceC&amp;F.ACS">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Object variable">ACS Object</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Parent type used for all <span class="mc-variable SmartSpace.ACS variable">ACS</span> types. <madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)">See <a href="../../ACS/acs-configuration.htm#ACStypes"><span class="mc-variable ACS.ACS variable">ACS</span> types in <span class="mc-variable SmartSpace.SmartSpace variable">SmartSpace</span></a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="Releases.2_10">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Object_Lifecycle variable">ACS Object Lifecycle</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Parent type used with <span class="mc-variable SmartSpace.ACS variable">ACS</span>.</td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="SmartSpaceC&amp;F.ACS">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Product variable">ACS Product</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Parent type used for all <span class="mc-variable SmartSpace.ACS variable">ACS</span> product types. <madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)">See <a href="../../ACS/acs-configuration.htm#ACStypes"><span class="mc-variable ACS.ACS variable">ACS</span> types in <span class="mc-variable SmartSpace.SmartSpace variable">SmartSpace</span></a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="Releases.2_10">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Product_Space variable">ACS Product Space</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Parent type used with <span class="mc-variable SmartSpace.ACS variable">ACS</span>.</td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="Releases.2_10">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Product_Type variable">ACS Product Type</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Parent type used with <span class="mc-variable SmartSpace.ACS variable">ACS</span>.</td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="Releases.2_11">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Production_Line variable">ACS Production Line</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Parent type used with <span class="mc-variable SmartSpace.ACS variable">ACS</span>.</td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="SmartSpaceC&amp;F.ACS">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Station variable">ACS Station</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Parent type used for all <span class="mc-variable SmartSpace.ACS variable">ACS</span> assembly line station types. <madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)">See <a href="../../ACS/acs-configuration.htm#ACStypes"><span class="mc-variable ACS.ACS variable">ACS</span> types in <span class="mc-variable SmartSpace.SmartSpace variable">SmartSpace</span></a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="Releases.2_10">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Trigger_Point variable">ACS Trigger Point</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">Parent type used with <span class="mc-variable SmartSpace.ACS variable">ACS</span>.</td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="SmartSpaceC&amp;F.ACS">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyE-Column1-Body1"><span class="mc-variable UbisenseTypes.ACS_Workspace variable">ACS Workspace</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyD-Column1-Body1">
-                        Parent type used for all <span class="mc-variable SmartSpace.ACS variable">ACS</span> workspace types. <madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)">See <a href="../../ACS/acs-configuration.htm#ACStypes"><span class="mc-variable ACS.ACS variable">ACS</span> types in <span class="mc-variable SmartSpace.SmartSpace variable">SmartSpace</span></a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                    <tr class="TableStyle-SmartSpaceTable-Body-Body1" data-mc-pattern="1" data-mc-conditions="Releases.2_9">
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyB-Column1-Body1"><span class="mc-variable UbisenseTypes.Outgoing_ACS_Event variable">Outgoing ACS Event</span>
-                                                                        </td>
-                                                                        <td class="TableStyle-SmartSpaceTable-BodyA-Column1-Body1">Parent type used for outgoing <span class="mc-variable SmartSpace.ACS variable">ACS</span> events. <madcap:conditionaltext data-mc-conditions="SmartSpaceBuilds.not-in-tutorial(snippet-level)">See <a href="../../ACS/acs-configuration.htm#ACStypes"><span class="mc-variable ACS.ACS variable">ACS</span> types in <span class="mc-variable SmartSpace.SmartSpace variable">SmartSpace</span></a>.</madcap:conditionaltext></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+        <tr>
+            <td>Ubisense Object</td>
+            <td>Ubisense Object is the most basic type and in the absence of any more complex types is the basis for all new data model types. See <a href="../../../ComponentandFeatureOverview/TopLevelFeatures/Visibility/location-system-sync.htm">Creating a custom type</a> and adding a space property for an example of configuring a custom data type. This type allows you to create custom data types which have a unique name and optionally include one or many space properties allowing the type to be included in different SmartSpace spatial relations.</td>
+        </tr>
+        <tr class="ubisense-table-subheader">
+            <td colspan="2">Visibility</td>
+        </tr>
+        <tr>
+            <td>Sensor</td>
+            <td>Used by Visibility. Sensors created in LSC are copied to SmartSpace as type Sensor, along with the name, position and label of the sensors. See <a href="../../../ComponentandFeatureOverview/TopLevelFeatures/Visibility/location-system-sync.htm">Location system sync</a> for how to use this type.</td>
+        </tr>
+        <tr class="ubisense-table-subheader">
+            <td colspan="2">Location rules</td>
+        </tr>
+        <tr>
+            <td>Assertion Area</td>
+            <td>Used in Robust location. Assertion area has two main functions: to group together assertion points with the same configuration parameters and to control a set of objects which can be located at one of its assertion points. See <a href="../../LocationRules/ConfigLocRules/robust-assertion-point-configuration.htm">Robust assertion points</a> for how to use this type.</td>
+        </tr>
+        <tr>
+            <td>Assertion Point</td>
+            <td>Used in Robust location. Assertion points report when an object is at a given place, using strong evidence, including distance from the point and the speed at which the object is moving. See <a href="../../LocationRules/ConfigLocRules/robust-assertion-point-configuration.htm">Robust assertion points</a> for how to use this type.</td>
+        </tr>
+        <tr>
+            <td>Parking Area</td>
+            <td>Used in Parking bay snapping. Parking Area is derived from Assertion Area and inherits all spatial properties, parameters and assertions from Assertion Area; and these inherited configurations have the same function. See <a href="../../LocationRules/ConfigLocRules/parking-configuration.htm">Parking</a> for how to use this type.</td>
+        </tr>
+        <tr>
+            <td>Parking Bay</td>
+            <td>Used in Parking bay snapping. Parking Bay is derived from Assertion Point and inherits all spatial properties, parameters and assertions from Assertion Point; and these inherited configurations have the same function. See <a href="../../LocationRules/ConfigLocRules/parking-configuration.htm">Parking</a> for how to use this type.</td>
+        </tr>
+        <tr>
+            <td>Tag Association Point</td>
+            <td>Used in Automated tag association. During automated tag association a sequence of objects created from an external source are assigned to tags detected at a Tag Association Point. See <a href="../../LocationRules/ConfigLocRules/automated-tag-association-configuration.htm">Automated tag association</a> for how to use this type.</td>
+        </tr>
+        <tr class="ubisense-table-subheader">
+            <td colspan="2">Room snapping</td>
+        </tr>
+        <tr>
+            <td>Building</td>
+            <td>Used in Room snapping to group rooms and doorways. See <a href="../../LocationRules/RoomSnapping/room-snapping-configuration.htm">Configuring Room snapping</a>.</td>
+        </tr>
+        <tr>
+            <td>Doorway</td>
+            <td>Used in Room snapping to define a space through which tags can pass between rooms. See <a href="../../LocationRules/RoomSnapping/room-snapping-configuration.htm">Configuring Room snapping</a>.</td>
+        </tr>
+        <tr>
+            <td>Room</td>
+            <td>Used in Room snapping to define areas inside of which tags are snapped to locations. See <a href="../../LocationRules/RoomSnapping/room-snapping-configuration.htm">Configuring Room snapping</a>.</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Creating a custom type and adding a space property
 

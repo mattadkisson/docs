@@ -1,6 +1,25 @@
-.ubisense-table-header{
-    background-color: #b04545;
+:root {
+    --ubisense-blue: #053b79; /* Replace with your desired blue color */
+    --ubisense-grey: #c0c0c0;
+}
+
+.ubisense-table-header {
+    background-color: var(--ubisense-blue);
     font-weight: bold;
     text-align: center;
     padding: 10px;
+    color: white;
+    font-style: bold;
+}
+.ubisense-table-header > th {
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif
+}
+.ubisense-table-subheader{
+    background-color: var(--ubisense-grey);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-style: bold;
 }

@@ -16,7 +16,17 @@
       "group": "SmartSpace Core",
       "icon": "plug",
       "pages":[
-        "smartspace-core/type-and-object-definition"
+        "smartspace-core/type-and-object-definition",
+        "smartspace-core/site-visualization",
+        "smartspace-core/spatial-relationship-definition",
+        "smartspace-core/service-security",
+        "smartspace-core/site-connector",
+        "smartspace-core/object-to-tag-assignment",
+        "smartspace-core/dotnet-api",
+        "smartspace-core/c-plus-plus",
+        "smartspace-core/location-store",
+        "smartspace-core/service-management",
+        "smartspace-core/logging"
       ]
     }]
   },

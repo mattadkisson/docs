@@ -35,7 +35,7 @@ details.
 
 The following section gives an example of how to go about this.
 
-  1. In SmartSpace Config, use the MODEL ASSIGNMENT task to assign the rep to a type and give it a representation mode. Double-click <Add new type rep> and choose the type and rep and enter a name for the custom rep mode that begins with unselectable.
+  1. In SmartSpace Config, use the MODEL ASSIGNMENT task to assign the rep to a type and give it a representation mode. Double-click \<Add new type rep> and choose the type and rep and enter a name for the custom rep mode that begins with unselectable.
 
 In the example below, the table type has the representation mode unselectable
 assigned and selected under Show in 2D.
