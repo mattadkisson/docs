@@ -1,15 +1,3 @@
-
-
-Skip To Main Content
-
-  * placeholder
-
-Filter:
-
-  * All Files
-
-Submit Search
-
 # UbisenseSmartSpace
 
 Ubisense SmartSpace is a modular software platform that manages real‑time
@@ -34,7 +22,7 @@ micro‑installations (small control systems running on a single machine)
 through to large sites with several servers and thousands of sensors, devices,
 people, etc., all with predictable performance.
 
-##  Modular Platform
+## Modular Platform
 
 SmartSpace is divided into a set of functional blocks that can be plugged
 together in different ways to create new types of location‑aware business
@@ -53,23 +41,16 @@ additional in-depth technical information about SmartSpace.
 
 Components are divided into three major layers:
 
-  * Core
-  * Smart Workers
-  * Smart Developer
+* Core
+* Smart Workers
+* Smart Developer
 
 ![image of SmartSpace situated as a layer providing links from the shop floor
 to enterprise software](images/SmartSpaceGraphic.png)
 
 ![SmartSpace software stack diagram](images/SmartSpaceSoftwareStack2.png)
 
-  * [SmartSpace Core](ComponentandFeatureOverview/TopLevel/core.htm) is a fundamental component for all SmartSpace applications, enabling the building of rich object and environment models and the description of the interactions between them.
-  * [Smart Workers](ComponentandFeatureOverview/TopLevel/smart-workers-introduction.htm) consume the object data provided by the Core to generate business activity events and deliver information to business systems and users through integration paths and graphical interfaces. Smart Workers are also used to integrate third-party sensor systems such as barcode, RFID and RTLS.
-  * Building new business logic or historical reports is enabled through the [SmartSpace Developer](ComponentandFeatureOverview/TopLevel/Developer-introduction.htm), allowing SmartSpace customers to fully customize or extend defined functionality or create new application behavior and reports.
-  * Smart Apps are preconfigured implementations of SmartSpace for specific industries and applications. Smart Apps are not described further on this website.
-
-[About this site](ComponentandFeatureOverview/FrontMatters\(Online\)/about-
-this-site.htm)
-
-[www.ubisense.net](https://www.ubisense.net/)  
-Copyright © 2020, Ubisense Limited 2014 - 2020. All Rights Reserved.
-
+* [SmartSpace Core](ComponentandFeatureOverview/TopLevel/core.htm) is a fundamental component for all SmartSpace applications, enabling the building of rich object and environment models and the description of the interactions between them.
+* [Smart Workers](ComponentandFeatureOverview/TopLevel/smart-workers-introduction.htm) consume the object data provided by the Core to generate business activity events and deliver information to business systems and users through integration paths and graphical interfaces. Smart Workers are also used to integrate third-party sensor systems such as barcode, RFID and RTLS.
+* Building new business logic or historical reports is enabled through the [SmartSpace Developer](ComponentandFeatureOverview/TopLevel/Developer-introduction.htm), allowing SmartSpace customers to fully customize or extend defined functionality or create new application behavior and reports.
+* Smart Apps are preconfigured implementations of SmartSpace for specific industries and applications. Smart Apps are not described further on this website.
