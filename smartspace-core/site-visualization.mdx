@@ -1,9 +1,8 @@
 ---
 Title: Site Visualization
+Description: Import 2D and 3D graphics into an easy-to-use configuration tool to visualize models of objects and buildings in a virtual representation of the real world
+Keywords: site visualization, 2D graphics, 3D graphics, configuration tool
 ---
-
-Import 2D and 3D graphics into an easy-to-use configuration tool to visualize
-models of objects and buildings in a virtual representation of the real world
 
 ## Summary
 
@@ -13,7 +12,7 @@ The task of building and testing such applications is greatly simplified when
 the types and objects involved can be visualized and manipulated in a virtual
 representation of the real world.
 
-![images of sites](/images/Site%20Vis.png)
+![images of sites](../images/Site_Vis.png)
 
 To this end, SmartSpace supports a site visualization feature that renders a
 graphical model of the environment and the application-specific objects within
@@ -36,9 +35,9 @@ Site visualization includes the following capabilities:
   * The ability to visualize spatial relationships and containment events
 
 
-# Object representations
+## Object representations
 
-## Introduction to Representations
+### Introduction to Representations
 
 SmartSpace allows you to create a digital model of a real-world environment
 that is a physical space filled with physical real-world objects. The digital
@@ -64,7 +63,7 @@ SmartSpace has two representation modes:
   * A 3D mode is available to build up your digital model, using representations for the environment and objects so that you as a human can interact with the model in a natural way. This interface is part of the main SmartSpace Config application.
   * A 2D mapping mode is exposed when you license the Visibility component of SmartSpace. This allows you to configure two-dimensional depictions of a setting, and the objects within it, to be delivered through HTML5-compliant browsers in the SmartSpace web map.
 
-## What are Representations, and When and How are they Used?
+### What are Representations, and When and How are they Used?
 
 Representations, or reps for short, are everyday graphical types (pictures)
 that can be used to present objects in a visually representative way on a
@@ -73,7 +72,7 @@ that can be used as representations. Details of these types, and importing,
 transforming and assigning them to objects is the subject of the following
 sections.
 
-## 3D Graphic Types
+### 3D Graphic Types
 
 SmartSpace uses an industry-standard 3D rendering engine to construct three-
 dimensional depictions of a scene and the objects within it. Being 3D, the
@@ -96,7 +95,7 @@ adding textures to 3D objects and importing them into SmartSpace is given in
 models](../../../ITResources/ITDocs/Graphics/TextureBaking/texture-
 baking-3D-models.htm).
 
-## 2D Graphic Types
+### 2D Graphic Types
 
 All user-facing SmartSpace applications use 2D visualization that is entirely
 web-based and has no third party plugin or hardware dependencies. In this way,
@@ -118,17 +117,17 @@ Examples of the preparation of graphics for use in SmartSpace are given in
 [Graphics in SmartSpace](../../../ITResources/ITDocs/Graphics/graphics-
 introduction.htm).
 
-## Default and Specific Representations
+### Default and Specific Representations
 
 Representations can be assigned to objects in one of two ways; either
 generically by the Type of the object such that all objects appear the same.
 
-![](../../../images/genericreps.png)
+![](../images/genericreps.png)
 
 Alternatively, reps can be assigned to specific Object instances such that
 each object is uniquely identifiable.
 
-![](../../../images/specificreps.png)
+![](../images/specificreps.png)
 
 In some applications, objects are assigned a rep from a collection which
 references some property of the object type. For example, car objects might
@@ -146,7 +145,7 @@ Representations are typically 3D for visualization in the SmartSpace digital
 model, or 2D for visualization in the Web maps feature of the Visibility
 component (if licensed).
 
-## Decorations and Representation Modes in the web map
+### Decorations and Representation Modes in the web map
 
 To see an object in the SmartSpace world model or on the SmartSpace web map,
 it must be assigned at least one representation.
@@ -161,7 +160,7 @@ easy way of highlighting that Anna is a First Aid Officer and that Charles is
 the office IT Manager. Additionally, decorations help to indicate that Charles
 is currently in a meeting and is therefore unavailable.
 
-![](../../../images/repswithdecorations.png)
+![](../images/repswithdecorations.png)
 
 Decorations can be assigned manually, in which case they persist with the
 object indefinitely, or can be assigned dynamically based on state changes in
@@ -176,7 +175,7 @@ between many different representations for a single object, it is necessary to
 reference each representation assignment uniquely. This is achieved through
 Representation Modes.
 
-## Representation Modes
+### Representation Modes
 
 Representation modes provide a means of displaying different representations
 of objects depending on context. An object, or object type, can be assigned a
@@ -185,9 +184,9 @@ modes to use to display their results. Rep modes can either be set once for
 the lifetime of the object or can be set and unset dynamically based on the
 current state of the object.
 
-## Representation Modes in Use
+### Representation Modes in Use
 
-![](../../../images/repsinuse.png)
+![](../images/repsinuse.png)
 
 In this example an object (Charles) is assigned a representation by setting a
 Rep mode called Default with a value of ManPurple_Rep. Additionally, a
