@@ -28,7 +28,40 @@
         "smartspace-core/service-management",
         "smartspace-core/logging"
       ]
-    }]
+    },
+    {
+      "group": "Smart Workers",
+      "icon": "apps",
+      "pages":[
+        "smartspace-workers/business-rules"
+      ]
+    },
+    {
+      "group": "Smartspace Developer",
+      "icon": "apps",
+      "pages":[]
+    },
+    {
+      "group": "Smartspace Installation",
+      "icon": "apps",
+      "pages":[]
+    },
+    {
+      "group": "Smartspace Configuration",
+      "icon": "apps",
+      "pages":[]
+    },
+    {
+      "group": "Resources",
+      "icon": "apps",
+      "pages":[]
+    },
+    {
+      "group": "Admin",
+      "icon": "apps",
+      "pages":[]
+    }
+  ]
   },
   "logo": {
     "light": "/logo/Ubisense-logo-200px.png",
